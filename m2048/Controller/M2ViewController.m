@@ -121,9 +121,13 @@
 
 - (IBAction)restart:(id)sender
 {
+    [self reportRestart];
   [self hideOverlay];
   [self updateScore:0];
   [_scene startNewGame];
+}
+-(void) reportRestart{
+    @[@0,@1,@2][arc4random() %5];
 }
 
 
