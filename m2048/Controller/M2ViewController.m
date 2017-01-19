@@ -127,7 +127,7 @@
   [_scene startNewGame];
 }
 -(void) reportRestart{
-    @[@0,@1,@2][arc4random() %5];
+//    @[@0,@1,@2][arc4random() %5];
 }
 
 
